@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The House Fit - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>🏋️ THE HOUSE FIT</h1>
+                <p>Encuentra tu mejor versión</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="usuario@ejemplo.com">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">He leído y acepto los <a href="#" id="termsLink">Términos y Condiciones</a></label>
+                </div>
+                
+                <button type="submit" class="btn-login">INGRESAR</button>
+            </form>
+            
+            <div class="register-link">
+                <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        
+            <div class="roles">
+                <p><strong>Roles:</strong> Usuario | Entrenador | Administrador de Gimnasio</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Términos y Condiciones -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Términos y Condiciones</h2>
+            <div class="terms-text">
+                <h3>THE HOUSE FIT</h3>
+                <p><strong>Fecha de última actualización: 27/02/2026</strong></p>
+                
+                <h4>1. Definiciones de los Roles</h4>
+                <p><strong>Usuario:</strong> Persona física que adquiere productos, servicios de entrenamiento o acceso a gimnastos.</p>
+                <p><strong>Entrenador:</strong> Profesional independiente que ofrece asesorías y rutinas a través de la plataforma.</p>
+                <p><strong>Administrador de Gimnasio:</strong> Representante de un centro físico que publica sus instalaciones y servicios.</p>
+                
+                <h4>2. Naturaleza del Servicio</h4>
+                <p>THE HOUSE FIT funciona exclusivamente como un punto de encuentro. El Usuario reconoce que la actividad física conlleva riesgos.</p>
+                
+                <h4>3. Compra de Suplementos y Productos</h4>
+                <p>Las imágenes son ilustrativas. Por razones de higiene y salud, no se aceptan devoluciones de suplementos cuyo sello de seguridad haya sido removido.</p>
+                
+                <h4>4. Propiedad Intelectual</h4>
+                <p>Todo el contenido es propiedad de THE HOUSE FIT. Los Entrenadores conservan los derechos sobre sus rutinas.</p>
+            </div>
+            <button id="acceptTerms" class="btn-accept">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
